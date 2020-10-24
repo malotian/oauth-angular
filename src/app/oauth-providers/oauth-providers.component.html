@@ -1,0 +1,14 @@
+<h1>Welcome to Oauth</h1>
+<button (click)="SetProvider('google')" >Google</button>
+
+<button (click)="SetProvider('github')">Github</button>
+
+<div *ngIf="isAccessTokenVisible">
+    <h3>Access Token</h3>
+    <h4>{{res}}</h4>
+</div>
+
+<div *ngIf="isAccessTokenVisible">
+    <h3>Id Token Claims</h3>
+    <h4>{{idtokenResponse}}</h4>
+</div>
